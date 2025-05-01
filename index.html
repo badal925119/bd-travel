@@ -96,9 +96,61 @@
    </section>
    <!-- Hero Section -->
     <section class="w-11/12 mx-auto">
-        <div>
+        <div class="">
             <img src="./img/bannerIMG1-DqaeRued.jpg" alt="">
-            <div>
+            <div class="absolute top-44 w-full left-32  ">
+                <div class="bg-white/80 p-6 rounded-lg shadow-md w-full max-w-5xl">
+                    <!-- Tabs -->
+                    <div class="flex space-x-2 mb-6">
+                      <button class="bg-green-600 text-white px-4 py-2 rounded-t-md font-semibold">🏕 Tour</button>
+                      <button class="bg-indigo-900 text-white px-4 py-2 rounded-t-md font-semibold">🛂 Visa</button>
+                      <button class="bg-indigo-900 text-white px-4 py-2 rounded-t-md font-semibold">🏨 Hotel</button>
+                      <button class="bg-indigo-900 text-white px-4 py-2 rounded-t-md font-semibold">✈️ Flight</button>
+                    </div>
+                
+                    <!-- Form -->
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <!-- Destination -->
+                      <div>
+                        <label class="block font-semibold mb-1">Where do you want to go? <span class="text-red-500">*</span></label>
+                        <select class="w-full border border-gray-300 rounded-md p-2">
+                          <option>Select a Country</option>
+                          <option>USA</option>
+                          <option>UK</option>
+                          <option>Japan</option>
+                        </select>
+                      </div>
+                
+                      <!-- Nationality -->
+                      <div>
+                        <label class="block font-semibold mb-1">Your Nationality <span class="text-red-500">*</span></label>
+                        <select class="w-full border border-gray-300 rounded-md p-2">
+                          <option>Bangladeshi</option>
+                          <option>Indian</option>
+                          <option>Pakistani</option>
+                        </select>
+                      </div>
+                
+                      <!-- Contact Number -->
+                      <div>
+                        <label class="block font-semibold mb-1">Contact Number <span class="text-red-500">*</span></label>
+                        <input type="text" placeholder="Contact Number" class="w-full border border-gray-300 rounded-md p-2" />
+                      </div>
+                
+                      <!-- Email Address -->
+                      <div>
+                        <label class="block font-semibold mb-1">Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded-md p-2" />
+                      </div>
+                
+                      <!-- Search Button (Full width on all columns) -->
+                      <div class="md:col-span-2 mt-4">
+                        <button type="submit" class="w-full bg-indigo-900 text-white py-3 rounded-md flex items-center font-bold justify-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                        </button>
+                      </div>
+                    </form>
+                  </div>
 
             </div>
             
