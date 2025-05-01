@@ -1,31 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Travel Design Corporation</title>
-    <link rel="icon" type="image/jpg" href="img/bd.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Design Corporation</title>
+  <script src="main.js" defer></script>
+
+  <link rel="icon" type="image/jpg" href="img/bd.png" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
-<body>
-    <section>
-        <div class="bg-[#24255d] h-16 flex justify-between p-4 items-center ">
-            <div class="flex gap-4"><div class="text-white font-semibold"><p> <i class="fa-solid fa-envelope mr-4"></i>chowdhury.bappy@gmail.com</p></div>
-            <div class="text-white font-semibold"><p> <i class="fa-solid fa-phone mr-4"></i>+88 01913202015
-                +88-02-2266007 81</p></div></div>
-            <div class="flex gap-4  text-white text-2xl">
-                <i class="fa-brands fa-facebook bg-blue-600 p-2 rounded-full hover:bg-[#24255d]"></i>
-                <i class="fa-brands fa-whatsapp bg-green-500 p-2 rounded-full hover:bg-[#24255d]"></i>
-                <i class="fa-brands fa-twitter bg-sky-500 p-2 rounded-full hover:bg-[#24255d]"></i>
-                <i class="fa-brands fa-instagram bg-pink-500 p-2 rounded-full hover:bg-[#24255d]"></i>
-                <i class="fa-brands fa-linkedin bg-blue-700 p-2 rounded-full hover:bg-[#24255d]"></i>
-                <i class="fa-solid fa-envelope bg-gray-600 p-2 rounded-full hover:bg-[#24255d]"></i>
-              </div>
-              
+<body class="bg-white">
+
+  <!-- Header Section -->
+  <section>
+    <div class="bg-[#24255d] text-white p-4">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        <!-- Contact Info -->
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 text-sm font-semibold">
+          <p><i class="fa-solid fa-envelope mr-2"></i>chowdhury.bappy@gmail.com</p>
+          <p><i class="fa-solid fa-phone mr-2"></i>+88 01913202015, +88-02-226600781</p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-3 text-2xl">
+          <i class="fa-brands fa-facebook bg-blue-600 p-2 rounded-full hover:bg-[#1d1f4a] transition"></i>
+          <i class="fa-brands fa-whatsapp bg-green-500 p-2 rounded-full hover:bg-[#1d1f4a] transition"></i>
+          <i class="fa-brands fa-twitter bg-sky-500 p-2 rounded-full hover:bg-[#1d1f4a] transition"></i>
+          <i class="fa-brands fa-instagram bg-pink-500 p-2 rounded-full hover:bg-[#1d1f4a] transition"></i>
+          <i class="fa-brands fa-linkedin bg-blue-700 p-2 rounded-full hover:bg-[#1d1f4a] transition"></i>
+          <i class="fa-solid fa-envelope bg-gray-600 p-2 rounded-full hover:bg-[#1d1f4a] transition"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Navbar section is here -->
+   <section>
+    <nav class="bg-[#5f64ae]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-24">
+            
+          
+            <div class="flex-shrink-0">
+              <img class="w-48 h-12" src="./img/travel_design_logo-gQ4FK84M.png" alt="Logo" />
+            </div>
+    
+            
+            <div class="md:hidden">
+              <button id="menu-btn" class="text-white text-3xl focus:outline-none">
+                &#9776;
+              </button>
+            </div>
+    
+            
+            <ul class="hidden md:flex space-x-6 text-white font-semibold">
+              <li class="hover:"><a href="#">Home</a></li>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Visa</a></li>
+              <li><a href="#">Tour Package</a></li>
+              <li><a href="#">Umrah Package</a></li>
+              <li><a href="#">Hajj Package</a></li>
+              <li><a href="#">Success Story</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          
+          <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 text-white font-semibold">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Visa</a></li>
+            <li><a href="#">Tour Package</a></li>
+            <li><a href="#">Umrah Package</a></li>
+            <li><a href="#">Hajj Package</a></li>
+            <li><a href="#">Success Story</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+    
+   </section>
+   <!-- Hero Section -->
+    <section class="w-11/12 mx-auto">
+        <div>
+            <img src="./img/bannerIMG1-DqaeRued.jpg" alt="">
+            <div>
+
+            </div>
+            
         </div>
     </section>
+
+<!-- card section -->
+<section  class="bg-[#eef1f2]">
+    <div class="px-4 py-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#202f59] mb-4">
+            Welcome To Travel Design Corporation
+          </h1>
+          <p class="text-sm sm:text-base md:text-lg font-semibold text-[#202f59]">
+            The Signature Valley For All Travellers
+          </p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-4 p-4">
+       
+        <div class="md:col-span-3">
+          <img
+            class="w-full h-auto rounded-md"
+            src="./img/pngtree-time-to-travel-summer-beach-holiday-vacation-poster-or-banner-realistic-image_1372110.jpg"
+            alt="Travel Banner"
+          />
+        </div>
+      
+        
+        <div class="md:col-span-7 text-[#202f59] text-base md:text-lg font-semibold">
+          <p>
+                    Travel Design Corporation is one of the leading visionary Travel agencies and Tour operators in Dhaka, Bangladesh. It is redefining the approach of booking travel services. We firmly believe that we have a competitive edge in offering a complete variety of travel services because, as a travel agency, we understand the different interests of sophisticated travelers and have the competence to do so.Real-life experiences are what we value. And to make sure that these interactions leave a good impression on the people and places you visit and remain with you for the rest of your life, we create events that inspire, thrill, challenge, and link you to the world.
+                    <br>
+                    <br>
+
+                Real-life experiences are what we value. And to make sure that these interactions leave a good impression on the people and places you visit and remain with you for the rest of your life, we create events that inspire, thrill, challenge, and link you to the world. Real-life experiences are what we value. And to make sure that these interactions leave a good impression on the people and places you visit and remain with you for the rest of your life, we create events that inspire, thrill, challenge, and link you to the world.
+                <br>
+                            <br>
+
+                Life is too short to worry about our daily monotonous life. Everyone deserves a break once in a while. You do too. So go ahead and fulfill your trip ambitions and aspirations while enjoying Travel Design BD's unique services.Real-life experiences are what we value. And to make sure that these interactions leave a good impression on the people and places you visit and remain with you for the rest of your life, we create events that inspire, thrill, challenge, and link you to the world.the people and places you visit and remain with you for the rest of your life, we create events that inspire, thrill, challenge, and link you to the world.
+          </p>
+        </div>
+      </div>
+      
+</section>
+
+<section
+  class="bg-cover bg-center text-white py-32"
+  style="background-image: url('./img/photo-1506905925346-21bda4d32df4');"
+>
+  <div class=" py-12j">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <!-- Card 1 -->
+      <div>
+        <i class="fa-solid fa-user text-4xl text-orange-500 mb-4"></i>
+        <h2 class="text-4xl font-bold">2,499,999+</h2>
+        <p class="text-orange-500 font-semibold mt-2">Satisfied Customers</p>
+      </div>
+      <!-- Card 2 -->
+      <div>
+        <i class="fa-solid fa-user text-4xl text-orange-500 mb-4"></i>
+        <h2 class="text-4xl font-bold">19,999+</h2>
+        <p class="text-orange-500 font-semibold mt-2">Destinations</p>
+      </div>
+      <!-- Card 3 -->
+      <div>
+        <i class="fa-solid fa-user text-4xl text-orange-500 mb-4"></i>
+        <h2 class="text-4xl font-bold">13,000+</h2>
+        <p class="text-orange-500 font-semibold mt-2">Tours</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+<!-- Footer Section -->
+<section class="bg-[#202f59] p-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+            <h1 class="text-lg font-bold text-white mb-4">QUICK MENU</h1>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]">Tour Package</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Visa Assistance</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Umrah Package</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Air Ticket</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">About Us</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Visa Status</p>
+
+        </div>
+        <div>
+            <h1 class="text-lg font-bold text-white mb-4">CONTACT WITH US</h1>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]">Cha 90/A , Pragati Sharani-Premier Plaza Shopping <br> Mall(2nd Floor), Shop No 15/A North Badda , Badda , <br> Dhaka-1212 Bangladesh.</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Phone: +88 01913202015</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Tel: +88-02-2266007 81</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Email: chowdhury.bappy@gmail.com</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">About Us</p>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]"">Website: traveldesignbd.com</p>
+        </div>
+        <div>
+            <h1 class="text-lg font-bold text-white mb-4">Travel Design Corporation</h1>
+            <p class="text-white font-semibold my-2 hover:text-[#60a5fa]">At Travel Design Corporation we are passionate about helping people explore the world.Our mission is to make travel accessible and enjoyable for everyone. Our company was founded by two friends who have experience in the travel sector. After years of working in the corporate world, we decided to follow our passion and start our own travel company. We wanted to create a business that would help others experience the same joy and wonder that we felt when we traveled.</p>
+        </div>
+    </div>
+</section>
+<!-- copyright section -->
+ <section class="bg-black h-auto">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 pt-8 pl-4 pb-4 justify-between items-center">
+        <div>
+            <p class="text-white">Copyright © 2025 Travel Design Corporation . All Rights Reserved.</p>
+        </div>
+        <div>
+            <p class="text-white md:ml-64">Design and Development By Wb Softwares.</p>
+        </div>
+    </div>
+ </section>
+
+
+    
+     
 </body>
 </html>
